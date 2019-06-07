@@ -1,1 +1,22 @@
 // Mixins Here
+
+.flexbox(@j:center, @a:center){
+    display: flex;
+    justify-content: @j;
+    align-items: @a;
+}
+
+.buttonstyle(@verticalpadding, @width){
+    padding: @verticalpadding;
+    background: @btn-bg-color;
+    width: @width;
+    color: white;
+    font-size: 1.8rem;
+    text-align: center;
+    border: 1px solid @btn-bg-color;
+    border-radius: 5px;
+    &:hover{
+        background: white;
+        color: @btn-bg-color;
+    }
+}

@@ -1,1 +1,35 @@
 // Navigation code here
+
+.topnav {
+    color: @nav-font;
+    background: @nav-bg;
+    padding: 10px 6px 0 0;
+    border: 1px double @nav-border;
+    .flexbox();
+    flex-direction: column;
+
+    nav {
+        max-width: 800px;
+        width: 100%;
+        .flexbox();
+        flex-direction: row;
+        margin-top: 13px;
+        @media @phone {
+            .flexbox(space-evenly, center);
+        }
+ 
+
+        a {
+            text-decoration: none;
+            color: @nav-font;
+            font-size: 1.6rem;
+            padding: 1rem;
+            
+            @media @phone {
+                flex-shrink: 1;
+            }
+        }
+
+    }
+       
+}
