@@ -14,14 +14,20 @@
         .flexbox();
         flex-direction: row;
         margin-top: 13px;
+        @media @phone {
+            .flexbox(space-evenly, center);
+        }
 
 
         a {
             text-decoration: none;
             color: @nav-font;
             font-size: 1.6rem;
-            padding: 0 1.6rem;
+            padding: 1rem;
             
+            @media @phone {
+                flex-shrink: 1;
+            }
         }
 
     }
