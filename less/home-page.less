@@ -6,6 +6,9 @@
 
     img {
       border-radius: 5px;
+      @media @phone {
+        height: 100px;
+      }
     }
 
     h2 {
@@ -38,12 +41,12 @@
   }
   .sky {
     @media @phone {
-      display: none;
+      @hide;
     }
   }
   .launch {
     @media @phone {
-      display: none;
+      @hide;
     }
   }
 
@@ -68,11 +71,14 @@
     @media @phone {
       flex-direction: column-reverse;
       align-items: center;
+      margin-top: 15px;
+      padding: 2.5%;
       }
       .walk-text {
         width: 50%;
         @media @phone {
           width:100%;
+          margin-top: 11px;
         }
   
         h3 {
