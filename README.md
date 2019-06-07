@@ -34,13 +34,25 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+Adaptive design uses media breakpoints but not responsive units, so while it can adapt to different device sizes, it’s still a bit rigid and does not fill every viewport size. Fully responsive websites use media breakpoints to optimize for smaller screens and also use responsive units like % or rem to fit the page within any size screen without introducing unintentional horizontal scrolling.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+With mobile first, your base design is for the smallest screen, like a phone, and then you use min-width queries to scale up from there to tablet and desktop. With desktop first, you set everything to desktop-size first as your base design, and then use max-width media queries to set styles for larger screens like tablet and then desktop.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+This sets the base font size on the page to the responsive equivalent of 10px. Since a rem is relative to the top/global font size, setting it to 10 in the HTML makes it easy to remember as a base setting for use throughout the page. So for example, we can use 1.6rem to set the font to the responsive equivalent of 16px, but it will scale up and down depending on the user’s browser settings.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+Preprocessing is a way to use a kind of shorthand language for writing CSS, such as LESS or SASS. You write the styling code in the preprocessor, and then use a compiler to automatically translate it to long-form CSS for you. It also adds some handy features and shortcuts, all aimed at helping you write less code to achieve the web styling you want.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+I like mixins a lot! They are really helpful to save time if you’re able to use the same elements multiple times all over your page. It’s nice to set the code once in the mixin and then not have to remember it or rewrite it multiple times.
+I’ve had a bit of trouble with nesting, and figuring out the best places to put the media queries, and figuring out which setting will override another depending on its placement.
+
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
